@@ -29,8 +29,6 @@ local FPS = Instance.new("TextLabel")
 
 local Battery = Instance.new("ImageLabel")
 
-local Enabled = (game.Players.LocalPlayer.PlayerGui:WaitForChild("NightVisionGui"))
-
 -------------------------------Gui, Correction and Light
 
 NightVisionGui.Name = "NightVisionGui"
@@ -147,6 +145,8 @@ UserInputService.InputBegan:Connect(ChangeStatus)
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Executed.',true,3)
 
 print("Executed")
+
+local Enabled = (game.Players.LocalPlayer.PlayerGui:WaitForChild("NightVisionGui"))
 
 if Enabled == true then
 
