@@ -1,4 +1,3 @@
-
 -------------------------------Variables and Services (no services brah)
 local UserInputService = game:GetService("UserInputService")
 
@@ -18,10 +17,6 @@ local Border = Instance.new("ImageLabel")
 local Player = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
 
 local Light = Instance.new("PointLight")
-
-local Correct = true
-
-local False = false
 
 local NVCSText = Instance.new("TextLabel")
 
@@ -146,9 +141,7 @@ firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent
 
 print("Executed")
 
-local Enabled = (game.Players.LocalPlayer.PlayerGui:WaitForChild("NightVisionGui"))
-
-if Enabled == true then
+if NightVisionGui.Enabled == true then
 
 	while true do
 		StaticEffect.Image = ("rbxassetid://12738673739")
