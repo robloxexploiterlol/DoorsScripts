@@ -4,7 +4,6 @@ local UserInputService = game:GetService("UserInputService")
 local NightVisionGui = Instance.new("ScreenGui")
 
 local NightVisionCorrection = Instance.new("ColorCorrectionEffect")
-NightVisionCorrection.Parent = game.Lighting
 
 local button = game:GetService("UserInputService")
 
@@ -89,6 +88,7 @@ StaticEffect.ImageTransparency = 0.4
 StaticEffect.Name = "static lol"
 StaticEffect.ZIndex = 0.9
 
+NightVisionCorrection.Parent = game.Lighting
 NightVisionCorrection.TintColor = Color3.fromRGB(88, 168, 81)
 NightVisionCorrection.Contrast = 0.4
 NightVisionCorrection.Saturation = -1
